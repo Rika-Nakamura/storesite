@@ -1,0 +1,262 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.4rem;
+  font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+  line-height: 1.5;
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+.sec-title {
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 7.2rem;
+  font-weight: bold;
+  line-height: 1.1;
+  text-align: center;
+  filter: drop-shadow(1px 1px 10px #c0c0c0);
+  position: absolute;
+  top: 30%;
+  color: #fff;
+}
+
+.item-title {
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1.8;
+  display: inline-block;
+  border-bottom: 6px solid #E03131;
+  margin-bottom: 70px;
+}
+
+.fixed-bg {
+  height: 300px;
+  background: center/cover fixed;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 90px 16px 150px;
+  text-align: center;
+}
+
+.header {
+  position: relative;
+  background: url(../img/mainvisual.jpg) center/cover;
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 20px;
+}
+.header nav ul {
+  display: flex;
+  justify-content: flex-end;
+  color: #fff;
+  position: absolute;
+  top: 16px;
+  right: 39px;
+}
+.header nav ul li {
+  padding-left: 24px;
+  font-weight: bold;
+}
+.header nav ul li a {
+  text-shadow: 1px 1px 2px #121212;
+}
+.header nav ul li a:hover {
+  color: #E03131;
+}
+.header h1 {
+  width: 466px;
+  height: 128px;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  filter: drop-shadow(1px 1px 10px #c0c0c0);
+}
+
+.menuSec .menu-img {
+  background-image: url(../img/menu.jpg);
+  position: relative;
+}
+.menuSec .menu-content {
+  display: flex;
+}
+.menuSec .menu-content .menu-item {
+  width: 50%;
+}
+.menuSec .menu-content .menu-item:first-of-type {
+  border-right: 1px solid #000000;
+}
+.menuSec .menu-content .menu-item dl {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 45px;
+}
+.menuSec .menu-content .menu-item dl dt {
+  font-weight: 400;
+  width: 87%;
+  text-align: left;
+  border-bottom: 1px dotted;
+  margin-bottom: 25px;
+}
+.menuSec .menu-content .menu-item dl dd {
+  width: 13%;
+  text-align: right;
+}
+
+.aboutSec .about-img {
+  background-image: url(../img/about.jpg);
+  position: relative;
+}
+.aboutSec ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+.aboutSec ul li {
+  flex-basis: 50%;
+  padding: 20px 27px 20px 20px;
+  text-align: left;
+}
+.aboutSec ul li:nth-child(even) {
+  padding-right: 20px;
+}
+.aboutSec .btn {
+  width: 160px;
+  height: 50px;
+  display: inline-block;
+  line-height: 3.5;
+  color: #000;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.aboutSec .btn span {
+  position: relative;
+  display: block;
+  /*  ボタンの範囲を親要素のbtnいっぱいにするため */
+  width: 100%;
+  height: 100%;
+}
+
+.locationSec {
+  margin-bottom: 40px;
+}
+.locationSec .location-img {
+  background-image: url(../img/location.jpg);
+  position: relative;
+}
+.locationSec .item-map iframe {
+  vertical-align: bottom;
+  width: 100%;
+  height: 400px;
+  filter: grayscale(100%);
+  margin-bottom: 22px;
+}
+.locationSec .item-info {
+  text-align: left;
+}
+.locationSec .item-info p {
+  margin-bottom: 14px;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 10px;
+}
+footer p {
+  font-size: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .sec-title {
+    font-size: 3.2rem;
+  }
+
+  .item-title {
+    font-size: 2rem;
+    line-height: 1.1;
+    margin-bottom: 25px;
+  }
+
+  .fixed-bg {
+    height: 94px;
+    background-attachment: scroll;
+  }
+
+  .wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 33px 16px 109px;
+  }
+
+  .header {
+    margin-bottom: 10px;
+  }
+  .header nav ul {
+    top: 20px;
+    right: 40px;
+  }
+  .header h1 {
+    width: 343px;
+    height: 84px;
+  }
+
+  .menuSec .menu-content {
+    display: block;
+  }
+  .menuSec .menu-content .menu-item {
+    width: 100%;
+    margin-bottom: 13px;
+  }
+  .menuSec .menu-content .menu-item:first-of-type {
+    border-right: none;
+  }
+  .menuSec .menu-content .menu-item dl {
+    padding: 0;
+  }
+  .menuSec .menu-content .menu-item .food {
+    margin-bottom: 13px;
+  }
+
+  .aboutSec .wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 33px 16px 80px;
+  }
+  .aboutSec .wrapper ul {
+    display: block;
+    margin-bottom: 40px;
+  }
+  .aboutSec .wrapper ul li {
+    padding: 0 0 14px;
+  }
+  .aboutSec .wrapper ul li:nth-child(even) {
+    padding-right: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
